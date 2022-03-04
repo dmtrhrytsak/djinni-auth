@@ -38,6 +38,8 @@ export const useAuth = () => {
           'You need to confirm your email address before you can access your account.'
         );
       }
+
+      setUser(user);
     } catch (error) {
       setError(error.message);
 
